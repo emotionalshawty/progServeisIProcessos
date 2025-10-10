@@ -11,3 +11,4 @@ public class humitat extends sensor {
         this.value = 100 * random.nextDouble();
     }
 }
+//yeag
