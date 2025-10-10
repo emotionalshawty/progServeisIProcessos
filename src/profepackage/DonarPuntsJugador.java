@@ -1,4 +1,4 @@
-package s1;
+package profepackage;
 
 public class DonarPuntsJugador implements Runnable{
     private Jugador jugador;

@@ -1,4 +1,4 @@
-package s1;
+package profepackage;
 
 public class LlegirPuntsJugador implements Runnable {
     private Jugador jugador;

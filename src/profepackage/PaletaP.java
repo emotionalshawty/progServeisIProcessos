@@ -1,4 +1,4 @@
-package s1;
+package profepackage;
 
 public class PaletaP implements Runnable {
 	private String Nom;

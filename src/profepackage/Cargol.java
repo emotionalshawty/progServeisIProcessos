@@ -1,4 +1,4 @@
-package s1;
+package profepackage;
 
 /**
  * Created by jordi.
