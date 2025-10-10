@@ -6,6 +6,7 @@ public class LlegirLlistaPuntsJugadors implements Runnable{
     List<Jugador> jugadorList;
 
     public LlegirLlistaPuntsJugadors(List<Jugador> jugadorList) {
+
         this.jugadorList = jugadorList;
     }
 
