@@ -2,9 +2,7 @@ package estaciometereologica;
 
 import java.util.Random;
 
-/**
- * Classe abstracta que representa un sensor genèric per a un entorn d'un sol fil.
- */
+
 public abstract class sensor {
     protected final String name;
     protected final String unit;

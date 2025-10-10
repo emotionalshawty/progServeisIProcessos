@@ -1,8 +1,6 @@
 package estaciometereologica;
 
-/**
- * Sensor de temperatura (versió d'un sol fil).
- */
+
 public class temperatura extends sensor {
     public temperatura() {
         super("Temperatura", "°C");

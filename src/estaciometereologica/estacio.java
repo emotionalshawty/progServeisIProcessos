@@ -2,9 +2,7 @@ package estaciometereologica;
 
 import java.util.List;
 
-/**
- * Classe principal que simula una estació meteorològica en un sol fil d'execució.
- */
+
 public class estacio {
 
     private static final int SIMULATION_DURATION_SECONDS = 30; // Durada total de la simulació
