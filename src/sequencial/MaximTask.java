@@ -5,7 +5,7 @@ import java.util.concurrent.ForkJoinPool;
 
 public class MaximTask extends RecursiveTask<Short> {
     //private static final int LLINDAR=10000000;
-    private static final int LLINDAR=10000000;
+    static final int LLINDAR=10000000;
     private short[] arr ;
     private int inici, fi;
 
