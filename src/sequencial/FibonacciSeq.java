@@ -15,13 +15,13 @@ public class FibonacciSeq  extends RecursiveTask <Long> {
 
     private long fibonacciSeq() {
         if (n <= 1) return n;
-        long n1 = 0, n2 = 1, n3 = 1;
+        long a = 0, b = 1;
         for (int i = 2; i <= n; i++) {
-            n3 = n1 + n2;
-            n1 = n2;
-            n2 = n3;
+            long temp = a + b;
+            a = b;
+            b = temp;
         }
-        return n3;
+        return b;
     }
 
     private long fibonacciR() {
@@ -42,12 +42,9 @@ public class FibonacciSeq  extends RecursiveTask <Long> {
         int n = sc.nextInt();
         ForkJoinPool pool = new ForkJoinPool();
         FibonacciSeq task = new FibonacciSeq(n);
-        long startTime = System.nanoTime();
         long result = pool.invoke(task);
-        long endTime = System.nanoTime();
-        long duration = endTime - startTime;
         System.out.println("Fibonacci(" + n + ") = " + result);
-        System.out.println("Time taken: " + duration + " nanoseconds");
+
         sc.close();
     }
 
