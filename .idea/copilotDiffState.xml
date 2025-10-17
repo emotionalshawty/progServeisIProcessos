@@ -12,15 +12,6 @@
             </PendingDiffInfo>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/product/controller/productcontroller.java">
-          <value>
-            <PendingDiffInfo>
-              <option name="filePath" value="$PROJECT_DIR$/src/product/controller/productcontroller.java" />
-              <option name="originalContent" value="package product.controller;&#10;&#10;import product.model.productservice;&#10;import product.view.productview;&#10;&#10;public class productcontroller {&#10;    private productservice service;&#10;    private productview view;&#10;&#10;    public productcontroller() {&#10;        this.service = new productservice();&#10;        this.view = new productview();&#10;    }&#10;&#10;    public void run() {&#10;        boolean running = true;&#10;        while (running) {&#10;            int choice = view.mainmenu();&#10;            switch (choice) {&#10;                case 1:&#10;                    String name = view.getProductName();&#10;                    float price = view.getProductPrice();&#10;                    int quantity = view.getProductQuantity();&#10;                    service.addProduct(new product.model.product(name, price, quantity));&#10;                    break;&#10;                case 2:&#10;                    String products = service.productList();&#10;                    view.displayProducts(products);&#10;                    break;&#10;                case 3:&#10;                    running = false;&#10;                    break;&#10;                default:&#10;                    view.errorMessage();&#10;            }&#10;        }&#10;    }&#10;}&#10;" />
-              <option name="updatedContent" value="package product.controller;&#10;&#10;import product.model.productservice;&#10;import product.view.productview;&#10;&#10;public class productcontroller {&#10;    private productservice service;&#10;    private productview view;&#10;&#10;    public productcontroller(productservice service) {&#10;        this.service = service;&#10;        this.view = new productview();&#10;    }&#10;&#10;    public void run() {&#10;        boolean running = true;&#10;        while (running) {&#10;            int choice = view.mainmenu();&#10;            switch (choice) {&#10;                case 1:&#10;                    String name = view.getProductName();&#10;                    float price = view.getProductPrice();&#10;                    int quantity = view.getProductQuantity();&#10;                    service.addProduct(new product.model.product(name, price, quantity));&#10;                    break;&#10;                case 2:&#10;                    String products = service.productList();&#10;                    view.displayProducts(products);&#10;                    break;&#10;                case 3:&#10;                    running = false;&#10;                    break;&#10;                default:&#10;                    view.errorMessage();&#10;            }&#10;        }&#10;    }&#10;}" />
-            </PendingDiffInfo>
-          </value>
-        </entry>
       </map>
     </option>
   </component>

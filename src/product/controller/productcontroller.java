@@ -2,13 +2,14 @@ package product.controller;
 
 import product.model.productservice;
 import product.view.productview;
+import java.util.List;
 
 public class productcontroller {
     private productservice service;
     private productview view;
 
-    public productcontroller(productservice service) {
-        this.service = service;
+    public productcontroller(List<product.model.product> productList) {
+        this.service = new productservice(productList);
         this.view = new productview();
     }
 
