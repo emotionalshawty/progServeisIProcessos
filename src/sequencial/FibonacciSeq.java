@@ -28,7 +28,7 @@ public class FibonacciSeq  extends RecursiveTask <Long> {
         FibonacciSeq f1 = new FibonacciSeq(n - 1);
         f1.fork();
         FibonacciSeq f2 = new FibonacciSeq(n - 2);
-        return f2.compute() + f1.join();
+        return f2.join() + f1.join();
     }
 
     @Override
