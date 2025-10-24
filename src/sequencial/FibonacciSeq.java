@@ -6,7 +6,7 @@ import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveTask;
 
 public class FibonacciSeq  extends RecursiveTask <Long> {
-    public static int LLINDAR = 40;
+    public static int LLINDAR = 8;
     private int n;
 
     public FibonacciSeq(int n) {
@@ -26,8 +26,9 @@ public class FibonacciSeq  extends RecursiveTask <Long> {
 
     private long fibonacciR() {
         FibonacciSeq f1 = new FibonacciSeq(n - 1);
-        f1.fork();
         FibonacciSeq f2 = new FibonacciSeq(n - 2);
+        f1.fork();
+        f2.fork();
         return f2.join() + f1.join();
     }
 
