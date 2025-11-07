@@ -1,13 +1,8 @@
 package sync.galetes;
 
-public class Cookies {
+public class MainCookies {
     private final Pot pot = new Pot();
 
-    public void run(){
-        while(true){
-            pot.agafant();
-        }
-    }
     public synchronized void agafar(String who) {
         while (pot.isEmpty()) {
             try {

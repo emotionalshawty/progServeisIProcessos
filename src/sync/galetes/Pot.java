@@ -1,26 +1,26 @@
 package sync.galetes;
 
 public class Pot {
-    private final int MAX = 20;
+    private static final int MAX = 20;
     private int count;
 
     public Pot() {
         this.count = MAX;
     }
 
-    public int getCount() {
+    public synchronized int getCount() {
         return count;
     }
 
-    public boolean isEmpty() {
+    public synchronized boolean isEmpty() {
         return count == 0;
     }
 
-    public void agafant() {
+    public synchronized void agafant() {
         if (count > 0) count--;
     }
 
-    public int refill() {
+    public synchronized int refill() {
         int added = MAX - count;
         count = MAX;
         return added;

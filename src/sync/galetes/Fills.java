@@ -1,9 +1,9 @@
 package sync.galetes;
 
 public class Fills extends Thread {
-    final private Cookies ck;
+    final private MainCookies ck;
 
-    public Fills(String nom, Cookies ck) {
+    public Fills(String nom, MainCookies ck) {
         super(nom);
         this.ck = ck;
     }

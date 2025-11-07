@@ -2,9 +2,9 @@ package sync.galetes;
 
 
 public class Pares extends Thread {
-    private final Cookies ck;
+    private final MainCookies ck;
 
-    public Pares(String name, Cookies ck) {
+    public Pares(String name, MainCookies ck) {
         super(name);
         this.ck = ck;
     }
