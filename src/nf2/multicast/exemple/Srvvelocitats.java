@@ -34,7 +34,8 @@ public class SrvVelocitats {
             try {
                 Thread.sleep(50);
             } catch (InterruptedException ex) {
-                ex.getMessage();
+                System.err.println("Error: " + ex.getMessage());
+                Thread.currentThread().interrupt();
             }
 
 
