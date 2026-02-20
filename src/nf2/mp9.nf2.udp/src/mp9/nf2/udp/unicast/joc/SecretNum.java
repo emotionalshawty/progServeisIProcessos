@@ -1,4 +1,4 @@
-package mp9.nf2.udp.unicast.joc;
+package nf2.mp9.nf2.udp.src.mp9.nf2.udp.unicast.joc;
 
 public class SecretNum {
 	/* Classe que genera números aleatoris per jugar a endivinar-los i els comprova

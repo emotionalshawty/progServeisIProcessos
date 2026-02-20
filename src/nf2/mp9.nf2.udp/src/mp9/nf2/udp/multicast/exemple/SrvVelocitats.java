@@ -1,4 +1,4 @@
-package mp9.nf2.udp.multicast.exemple;
+package nf2.mp9.nf2.udp.src.mp9.nf2.udp.multicast.exemple;
 
 import java.io.IOException;
 import java.net.DatagramPacket;

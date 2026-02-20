@@ -1,4 +1,4 @@
-package mp9.nf2.udp.unicast.apunts;
+package nf2.mp9.nf2.udp.src.mp9.nf2.udp.unicast.apunts;
 import java.io.IOException;
 import java.net.*;
 import java.util.Scanner;
